@@ -9,4 +9,5 @@ echo "Starting $(/usr/bin/pt-heartbeat --version) for ${DB_HOST}/${DB_NAME}"
                       --interval ${UPDATE_INTERVAL} \
                       --fail-successive-errors 2 \
                       --utc \
-                      --update
+                      --update \
+                      --replace

@@ -1,7 +1,7 @@
 FROM alpine:latest as builder
 
 RUN apk add --no-cache git
-RUN git clone https://github.com/percona/percona-toolkit.git
+RUN git clone --branch  3.x https://github.com/percona/percona-toolkit.git
 
 FROM alpine:latest
 
